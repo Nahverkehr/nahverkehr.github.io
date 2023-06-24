@@ -1,14 +1,12 @@
 // JavaScript to close the menu when a link is clicked
 document.addEventListener("DOMContentLoaded", function() {
     var links = document.querySelectorAll(".menu a");
-    var sideMenuCheckbox = document.getElementById("side-menu");
     var hoverTimeout;
     var isMenuHovered = false;
   
     // Function to handle menu activation
     function activateMenu() {
       if (isMenuHovered) {
-        sideMenuCheckbox.checked = true;
       }
     }
   
@@ -29,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // Add click event listeners to the navigation links
     links.forEach(function(link) {
       link.addEventListener("click", function() {
-        sideMenuCheckbox.checked = false;
       });
     });
   });

@@ -1,71 +1,72 @@
-/* Theming /
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); / import font */
+/* Theming */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
 
 @font-face {
   font-family: simpl;
   src: url(ttf/simplifica.ttf);
-  }
+}
   
-  :root {
+:root {
   --white: #f9f9f9;
   --black: #000000;
   --gray: #85888C;
-  } /* variables*/
-  
-  /* Place your other styles for the content here */
-  
-  /* Place your other styles for the content here */
-  
-  /* Reset */
-  
-  *{
+} /* variables*/
+
+/* Place your other styles for the content here */
+
+/* Place your other styles for the content here */
+
+/* Reset */
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  }
-  body {
+}
+
+body {
   background-color: var(--white);
   font-family: "Lexend";
   background-image: url(img/homepage.png);
   position: relative;
   max-width: 100%;
   height: auto;
-  }
-  
-  a {
+}
+
+a {
   text-decoration: none;
-  }
-  
-  ul {
+}
+
+ul {
   list-style: none;
-  }
-  
-  /* Header */
-  header {
+}
+
+/* Header */
+header {
   height: 60px;
   box-shadow: 0px 10px 13px -7px #000000, 0px 5px 13px 2px rgba(0, 0, 0, 0.37);
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url(img/homepageheader.png);
-  }
-  
-  header a {
+}
+
+header a {
   margin-right: 20px;
   font-family: 'Lexend';
   font-size: 18px;
   text-decoration: none;
   color: rgb(255, 255, 255);
-  }
-  
-  header a:hover {
+}
+
+header a:hover {
   color: rgb(97, 194, 235);
   text-decoration: underline;
   text-underline-offset: 15px;
-  }
-  
-  /* Logo */
-  .logo {
+}
+
+/* Logo */
+.logo {
   display: inline-block;
   color: var(--white);
   font-size: 20px;
@@ -73,10 +74,10 @@
   margin-bottom: 20px;
   margin-top: 20px;
   text-align: center;
-  }
-  
-  /* Nav menu */
-  .nav {
+}
+
+/* Nav menu */
+.nav {
   width: 100%;
   height: 50%;
   position: fixed;
@@ -87,37 +88,37 @@
   transition-delay: 150ms;
   top: 60px;
   right: 0;
-  }
-  
-  .menu a {
+}
+
+.menu a {
   display: block;
   padding: 40px;
   color: var(--white);
   text-align: center;
   /* Center the text */
-  }
-  
-  .menu a:hover {
+}
+
+.menu a:hover {
   background-color: var(--gray);
-  }
-  
-  .hamb {
+}
+
+.hamb {
   cursor: pointer;
   float: right;
   padding: 40px 20px;
-  }
-  
-  .hamb-line {
+}
+
+.hamb-line {
   background: var(--white);
   display: block;
   height: 2px;
   position: relative;
   width: 24px;
-  }
-  
-  /* Style span tag */
-  .hamb-line::before,
-  .hamb-line::after {
+}
+
+/* Style span tag */
+.hamb-line::before,
+.hamb-line::after {
   background: var(--white);
   content: '';
   display: block;
@@ -125,32 +126,32 @@
   position: absolute;
   transition: all 0.2s ease-out;
   width: 100%;
-  }
-  
-  .hamb-line::before {
-  top: 5px;
-  }
-  
-  .hamb-line::after {
-  top: -5px;
-  }
-  
-  .lrp {
-  margin-top: 10px;
-  }
-  
-  @media (min-width: 768px) {
-    .side-menu {
-      display: none;
-      }
-  }
+}
 
-  .hamb:hover + .nav,
-  .nav:hover {
-  max-height: 100%;
+.hamb-line::before {
+  top: 5px;
+}
+
+.hamb-line::after {
+  top: -5px;
+}
+
+.lrp {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .side-menu {
+    display: none;
   }
-  
-  h1 {
+}
+
+.hamb:hover + .nav,
+.nav:hover {
+  max-height: 100%;
+}
+
+h1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,61 +159,74 @@
   color: white;
   font-size: 150px;
   font-family: "simpl";
-  }
-  
-  /* Your existing CSS styles */
-  
-  /* Typing Animation */
-  .typing-cursor {
+}
+
+/* Your existing CSS styles */
+
+/* Typing Animation */
+.typing-cursor {
   display: inline-block;
   width: 8px;
   height: 20px;
   background-color: #000;
   animation: typingCursor 0.7s infinite;
-  }
-  
-  @keyframes typingCursor {
+}
+
+@keyframes typingCursor {
   0% {
-  opacity: 0;
+    opacity: 0;
   }
   50% {
-  opacity: 1;
+    opacity: 1;
   }
   100% {
-  opacity: 0;
+    opacity: 0;
   }
-  }
-  
-  /* Cursor Animation */
-  .cursor-blink {
+}
+
+/* Cursor Animation */
+.cursor-blink {
   animation: cursorBlink 1s infinite;
-  }
-  
-  @keyframes cursorBlink {
+}
+
+@keyframes cursorBlink {
   0%,
   100% {
-  opacity: 1;
+    opacity: 1;
   }
   50% {
-  opacity: 0;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 75px;
+    line-height: 50px;
   }
 
+  body {
+    background-color: var(--white);
+    font-family: "Lexend";
+    background-image: url(img/homepage.png);
+    position: relative;
+    max-width: 100%;
+    height: auto;
   }
+}
 
+input[type="checkbox"].side-menu {
+  display: none;
+}
 
-  @media (max-width: 600px)
-  {
-    h1 {
-      font-size: 75px;
-      line-height: 50px;
-    }
+/* Updated CSS */
 
-    body {
-      background-color: var(--white);
-      font-family: "Lexend";
-      background-image: url(img/homepage.png);
-      position: relative;
-      max-width: 100%;
-      height: auto;
-      }
-  }
+/* Checkbox */
+.side-menu {
+  display: none;
+}
+
+/* Remove checkbox styles */
+input[type="checkbox"].side-menu {
+  display: none;
+}
