@@ -1,0 +1,17 @@
+@font-face {
+    font-family: comfortaa;
+    src: url(ttf/comfortaa.ttf);
+}
+
+            header {
+                background-color: #53a9d0;
+                font-family: "comfortaa";
+                color: #fff;
+                padding: 10px;
+                box-shadow: 5px 5px 15px 5px rgba(92,92,92,0.53);
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+            }
