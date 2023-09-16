@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   // JavaScript to handle the typing animation
-document.addEventListener("DOMContentLoaded", function() {
-    var text = "LandRP.net"; // Text to animate
+  document.addEventListener("DOMContentLoaded", function() {
+    var text = "never back down never what"; // Text to animate
     var typingCursor = document.getElementById("typing-animation");
 
     function getRandomSpeed(min, max) {
@@ -61,7 +61,11 @@ document.addEventListener("DOMContentLoaded", function() {
         function type() {
             if (index < text.length) {
                 var speed = getRandomSpeed(100, 350); // Generate a random typing speed between 100ms and 350ms
-                cursorElement.innerHTML += text.charAt(index);
+                if (text.charAt(index) === ' ') {
+                    cursorElement.innerHTML += '&nbsp;'; // Add a non-breaking space
+                } else {
+                    cursorElement.innerHTML += '<a href="https://www.youtube.com/watch?v=qWNQUvIk954" style="color: white;">' + text.charAt(index) + '</a>';
+                }
                 index++;
                 setTimeout(type, speed);
             } else {
@@ -74,3 +78,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     typeWriter(text, typingCursor);
 });
+
+
+

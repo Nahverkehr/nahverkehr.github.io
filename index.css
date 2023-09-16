@@ -1,5 +1,5 @@
 /* Theming */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 @font-face {
   font-family: simpl;
@@ -11,10 +11,6 @@
   --black: #000000;
   --gray: #85888C;
 } /* variables*/
-
-/* Place your other styles for the content here */
-
-/* Place your other styles for the content here */
 
 /* Reset */
 
@@ -170,6 +166,11 @@ h1 {
   height: 20px;
   background-color: #000;
   animation: typingCursor 0.7s infinite;
+}
+
+h1 {
+  color: white; /* Set text color to white */
+  text-decoration: none; /* Remove underline from links */
 }
 
 @keyframes typingCursor {
