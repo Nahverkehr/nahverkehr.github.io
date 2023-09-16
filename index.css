@@ -168,11 +168,6 @@ h1 {
   animation: typingCursor 0.7s infinite;
 }
 
-h1 {
-  color: white; /* Set text color to white */
-  text-decoration: none; /* Remove underline from links */
-}
-
 @keyframes typingCursor {
   0% {
     opacity: 0;
